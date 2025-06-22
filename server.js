@@ -37,8 +37,11 @@ wss.on('connection', ws => {
   });
 });
 
+const PORT = parseInt(process.env.PORT, 10) || 3000;
+
 // Слушаем на всех интерфейсах, чтобы было доступно по LANIP
-server.listen(3000, '0.0.0.0', () => {
-  console.log('Сервер запущен, зайди по http://<IP_вашего_PC>:3000');
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Сервер запущен на http://localhost:${PORT} и http://<ваш-IP>:${PORT}`);
 });
+
 
