@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.table-wrapper {
+  overflow-x: auto;
+  padding: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 120px repeat(10, 140px);
+  grid-auto-rows: minmax(60px, auto);
+}
+.header-cell, .court-name, .slot {
+  border: 1px solid #ccc;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.header-cell, .court-header {
+  background: #eee;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.court-name {
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  background: white;
+  padding: 5px;
+  min-height: 60px;
+}
+.slot.green {
+  background: #d2f8d2;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.icon-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #888;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
